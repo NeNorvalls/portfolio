@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Portfolio Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. **Introduction:**
 
-## Available Scripts
+   - The component begins with a welcoming "About Me" title.
+   - A brief introduction identifies Nenita Norvalls as a passionate coder based in Bergen, Norway.
 
-In the project directory, you can run:
+2. **Education and Skills:**
 
-### `npm start`
+   - The component highlights Nenita's imminent completion of the Front End Development course at Noroff.
+   - Emphasizes a solid foundation in HTML, JavaScript, CSS, and React gained through education.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Interests:**
+   - The "Interests" section shares Nenita's enthusiasm for exploring new technologies and continuous learning.
+   - Reveals personal interests such as playing Nintendo, reading books, live-streaming, spending time with family, and studying additional coding languages online.
+   - Mentions a passion for design in Adobe XD and photography.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Projects Component
 
-### `npm test`
+My "Projects" component is a React functional component showcasing a portfolio of projects. It employs separate styles from an external file for a consistent and visually appealing layout.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Section Title:**
 
-### `npm run build`
+   - The component begins with a title "Projects," indicating its purpose.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Project Cards:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   - Each project is presented within a card structure, displaying an image, title, technologies used, and a brief description.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Project Data:**
 
-### `npm run eject`
+   - The component populates with data for three projects, each having an image, title, technologies, and a description of the project.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Action Buttons:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   - For each project, there are action buttons allowing users to visit the GitHub repository and view a live demo.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. **Responsive Styling:**
+   - Styles are imported from a separate file, ensuring consistent and visually appealing styling for each project card.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- =========================================== -->
