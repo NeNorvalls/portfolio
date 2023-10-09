@@ -23,6 +23,5 @@ export const ProfileImage = styled.img`
   @media (max-width: 768px) {
     max-width: 200px;
     height: auto;
-    margin-right: 20px;
   }
 `;

@@ -19,6 +19,8 @@ export const HomeWrapper = styled.div`
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
+  max-width: 960px;
+  margin: auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -31,12 +33,19 @@ export const HomeWrapper = styled.div`
   }
 `;
 
+export const FlexWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
 export const TitleWrapper = styled.div`
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 100px !important;
-  font-weight: bold !important; /* Use a bold font-weight */
-  font-family: "Anton", sans-serif; /* Use the Anton font */
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(45deg, #f06, #09f, #6f0, #f06);
@@ -44,21 +53,31 @@ export const TitleWrapper = styled.div`
   animation: ${rainbowAnimation} 10s linear infinite;
   text-stroke: 5px white; /* Adjust text stroke as needed */
 
-  @media (max-width: 768px) {
-    font-size: 80px !important;
-    text-stroke: 3px white; /* Adjust text stroke for smaller screens */
+  h4.introTitle {
+    font-size: 80px;
+    font-weight: bold;
+    font-family: "Anton", sans-serif;
+  }
 
-    h4 {
-      font-size: 50px !important;
+  @media (max-width: 320px) {
+    h4.introTitle {
+      font-size: 30px !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    text-stroke: 3px white;
+
+    h4.introTitle {
+      font-size: 50px;
     }
   }
 
   @media (min-width: 1200px) {
-    font-size: 120px !important;
-    text-stroke: 7px white; /* Adjust text stroke for larger screens */
+    text-stroke: 7px white;
 
-    h4 {
-      font-size: 100px !important;
+    h4.introTitle {
+      font-size: 100px;
     }
   }
 `;

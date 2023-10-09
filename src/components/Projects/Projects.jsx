@@ -9,6 +9,7 @@ import {
   ProjectActions,
   ProjectImage,
   CustomButton,
+  ContentWrapper
 } from './ProjectsStyles' // Import styles from the separate file
 
 import nenoSp2AuctionsImage from '../../images/neno-sp2auctions.png'
@@ -49,8 +50,9 @@ function Projects() {
 
   return (
     <ProjectsWrapper id="projects">
-      <SectionTitle>Projects</SectionTitle>
-      <ProjectContainer>
+    <SectionTitle>Projects</SectionTitle>
+    <ContentWrapper>
+    <ProjectContainer>
         {projects.map((project, index) => (
           <ProjectCard key={index}>
             <ProjectCardContent>
@@ -78,6 +80,7 @@ function Projects() {
           </ProjectCard>
         ))}
       </ProjectContainer>
+      </ContentWrapper> 
     </ProjectsWrapper>
   )
 }

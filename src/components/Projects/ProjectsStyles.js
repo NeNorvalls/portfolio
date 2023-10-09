@@ -1,32 +1,57 @@
 import styled from "styled-components";
 
 export const ProjectsWrapper = styled.div`
-  background-color: #000;
-  padding: 20px;
-  margin: 20px;
+  min-height: 100vh;
   color: #fff;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+`;
+
+export const ContentWrapper = styled.div`
+background-color: #000;
+display: flex;
+align-items: center;
+justify-content: center;
 `;
 
 export const SectionTitle = styled.h5`
   font-size: 24px;
+  text-align: center;
   margin-bottom: 20px;
 `;
 
 export const ProjectContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
   justify-content: center;
-  color: #000;
+  width: 100%;
+  gap: 2rem;
+
+  @media (min-width: 769px) {
+    & > div {
+      flex: 1 0 calc(33.333% - 2rem);
+    }
+  }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+
+      & > div {
+        flex-basis: 100%;
+      }
+    }
 `;
 
 export const ProjectCard = styled.div`
   background-color: black;
   border: 2px solid #fff;
   margin: 1rem;
-  width: 100%;
   max-width: 300px;
-  flex: 1;
+  height: 400px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease-in-out;
@@ -37,6 +62,7 @@ export const ProjectCard = styled.div`
 
   @media (max-width: 768px) {
     max-width: 100%;
+    margin: 0.5rem;
   }
 `;
 
@@ -52,7 +78,7 @@ export const ProjectTitle = styled.h6`
   @media (max-width: 480px) {
     font-size: 14px;
   }
-`;
+`; 
 
 export const ProjectCardContent = styled.div`
   text-align: center;
@@ -66,6 +92,10 @@ export const ProjectCardContent = styled.div`
   @media (max-width: 480px) {
     font-size: 14px;
   }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
 `;
 
 export const ProjectActions = styled.div`
@@ -74,7 +104,6 @@ export const ProjectActions = styled.div`
 
 export const ProjectImage = styled.img`
   max-width: 100%;
-  max-height: 100%;
   object-fit: contain;
 `;
 
@@ -93,5 +122,9 @@ export const CustomButton = styled.a`
   &:hover {
     background-color: #fff;
     color: #000;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 14px;
   }
 `;

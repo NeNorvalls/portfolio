@@ -20,6 +20,9 @@ export const SkillsWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 960px;
+  margin: auto;
 `;
 
 export const SkillBadge = styled.div`

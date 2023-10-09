@@ -1,17 +1,31 @@
 import styled from "styled-components";
 
 export const ContactWrapper = styled.div`
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #000;
+  padding: 20px;
+`;
+
+export const Container = styled.div`
   background: #ffffff;
   border-radius: 10px;
   padding: 20px;
-  margin: 20px auto;
-  margin-bottom: 10rem;
-  max-width: 1000px;
-`;
+  max-width: 960px;
+
+  @media (max-width: 320px) {
+    width: 100%;
+    padding: 10px;
+  }
+`
 
 export const SectionTitle = styled.h5`
   font-size: 24px;
   margin-bottom: 20px;
+  color: #fff;
 `;
 
 export const ContactForm = styled.form`

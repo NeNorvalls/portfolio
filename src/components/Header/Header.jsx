@@ -6,6 +6,7 @@ import {
   BigScreenNavLinks,
   NavLink,
   CustomNavbar,
+  SmallScreenNavLinks,
 } from './HeaderStyles'
 
 function Header() {
@@ -39,11 +40,7 @@ function Header() {
         <CustomHeaderTitle onClick={() => handleNavItemClick('about')}>
           NeNorvalls
         </CustomHeaderTitle>
-        <StyledIconButton
-          color="inherit"
-          aria-label="menu"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
+        <StyledIconButton color="inherit" aria-label="menu" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
           ☰
         </StyledIconButton>
         <BigScreenNavLinks>
@@ -57,7 +54,7 @@ function Header() {
         </BigScreenNavLinks>
       </CustomNavbar>
       {isMobileMenuOpen && (
-        <div>
+        <SmallScreenNavLinks>
           <NavLink onClick={() => handleNavItemClick('projects')}>
             Projects
           </NavLink>
@@ -65,10 +62,9 @@ function Header() {
           <NavLink onClick={() => handleNavItemClick('contact')}>
             Contact
           </NavLink>
-        </div>
+        </SmallScreenNavLinks>
       )}
     </CustomHeaderWrapper>
   )
 }
-
 export default Header
