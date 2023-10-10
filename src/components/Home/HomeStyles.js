@@ -38,7 +38,6 @@ export const FlexWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
 
   @media (max-width: 768px) {
     flex-direction: column;

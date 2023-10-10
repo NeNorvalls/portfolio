@@ -8,7 +8,7 @@ export const ImageWrapper = styled.div`
   box-shadow: none !important;
   border-radius: 5px;
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 4rem;
   padding: 1rem;
 `;
 
