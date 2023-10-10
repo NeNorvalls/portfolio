@@ -7,10 +7,10 @@ function AboutMe() {
     <AboutMeWrapper id="about">
       <SectionTitle>About Me</SectionTitle>
       <ContentWrapper>
-        <Paragraph>
+        <Paragraph className='aboutParagraph'>
           Hi, I'm Nenita Norvalls, a passionate coder based in Bergen, Norway.
         </Paragraph>
-        <Paragraph>
+        <Paragraph className='aboutParagraph'>
           I will soon be finishing my course in Front End Development at Noroff.
           My educational background has equipped me with a solid foundation in
           HTML, JavaScript, CSS, and React.

@@ -1,4 +1,5 @@
 import React from 'react'
+import IntroductionSection from '../IntroductionSection/IntroductionSection';
 import {
   SkillsWrapper,
   SkillBadge,
@@ -10,6 +11,7 @@ import {
 function Skills() {
   return (
     <>
+      <IntroductionSection />
       <SectionTitle>Skills</SectionTitle>
       <SkillsWrapper>
         {/* HTML */}

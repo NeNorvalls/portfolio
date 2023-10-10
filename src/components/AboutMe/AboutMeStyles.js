@@ -11,17 +11,19 @@ export const AboutMeWrapper = styled.div`
 `;
 
 export const ContentWrapper = styled.div`
-  background-color: #000;
+  background-color: #222;
   max-width: 960px;
 `;
 
 export const SectionTitle = styled.h2`
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin: 1rem;
 `;
 
 export const Paragraph = styled.p`
-  font-size: 1rem;
+font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  font-size: 1.2rem;
   margin: 1rem;
   line-height: 1.6;
+  letter-spacing: 2px;
 `;
